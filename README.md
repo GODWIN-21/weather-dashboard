@@ -1,2 +1,4 @@
-# weather-dashboard
-A weather dashboard that fetches data from a public weather API
+node_modules
+dist
+.vite
+.DS_Store
