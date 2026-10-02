@@ -1,0 +1,44 @@
+.hourly {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(90px, 1fr));
+  gap: 12px;
+}
+
+.hour-card {
+  text-align: center;
+  padding: 18px 12px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.hour-card .time {
+  display: block;
+  color: var(--muted);
+  font-size: 0.76rem;
+  margin-bottom: 10px;
+}
+
+.hour-card .icon {
+  font-size: 1.9rem;
+  display: block;
+}
+
+.hour-card .temp {
+  font-size: 1.2rem;
+  letter-spacing: -0.05em;
+  margin-top: 10px;
+  display: block;
+}
+
+@media (max-width: 840px) {
+  .hourly {
+    grid-template-columns: repeat(3, minmax(90px, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  .hourly {
+    grid-template-columns: repeat(2, minmax(90px, 1fr));
+  }
+}

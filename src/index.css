@@ -1,0 +1,39 @@
+:root {
+  --bg-1: #071a2a;
+  --bg-2: #0d243f;
+  --card: rgba(15, 26, 42, 0.72);
+  --card-strong: rgba(22, 36, 58, 0.9);
+  --line: rgba(148, 163, 184, 0.22);
+  --text: #ebf3ff;
+  --muted: #b7c9e4;
+  --accent: #67e8f9;
+  --accent-2: #60a5fa;
+  --shadow: 0 20px 60px rgba(2, 6, 23, 0.45);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  font-family: 'Inter', sans-serif;
+  background:
+    radial-gradient(circle at top left, rgba(96, 165, 250, 0.22), transparent 26%),
+    radial-gradient(circle at bottom right, rgba(103, 232, 249, 0.2), transparent 26%),
+    linear-gradient(135deg, var(--bg-1), var(--bg-2));
+  color: var(--text);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 32px 18px 56px;
+}
+
+#root {
+  width: 100%;
+}
